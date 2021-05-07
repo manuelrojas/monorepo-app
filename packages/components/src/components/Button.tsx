@@ -1,4 +1,5 @@
 import * as React from 'react'
+import logo from '../logo.svg';
 
 interface Props {
     onClick: () => void
@@ -6,7 +7,9 @@ interface Props {
 
 const Button: React.FC<Props> = (props) => {
     return (
-        <button {...props}>TEST CLICK</button>
+        <button {...props}>
+            <img src={logo} alt="logo" />
+            TEST CLICK</button>
     )
 }
 
